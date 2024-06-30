@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+.about-image {
+    margin-right: 2rem;
+    flex-shrink: 0; /* Evita que a imagem diminua em tamanho */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.product {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    /* Adicione estilos específicos para desktop aqui */
+    .products {
+        margin: 2rem;
+    }
+}
+
+/* Estilos para tablet (de 641px até 1023px) */
+@media (max-width: 1023px) {
+    /* Adicione estilos específicos para tablet aqui */
+    .about {
+        flex-direction: column;
+    }
+
+    .products {
+        margin: 1rem;
+    }
+
+    .product {
+        width: 45%;
+    }
+}
+
+/* Estilos para dispositivos móveis (até 640px) */
+@media (max-width: 640px) {
+    /* Adicione estilos específicos para dispositivos móveis aqui */
+    .about {
+        margin: 1rem;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
